@@ -32,7 +32,8 @@ div.heading {
     margin-top: 65px;
     margin-bottom: 70px;
 }
-.prebook-button{
+
+.prebook-button {
     background-color: #E02C6D;
     color: #FFFFFF;
     /*padding: 10px 24px 10px 24px;*/
@@ -63,13 +64,15 @@ hr {
     margin-right: 45px;
     margin-left: 45px;
 }
-.collection-headline{
+
+.collection-headline {
     align-items: center;
     justify-content: center;
     margin-top: 210px;
     margin-bottom: 30px;
     font-size: 28px;
 }
+
 .collection {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -89,14 +92,18 @@ hr {
     width: 329px;
     height: 476px;
 }
-.collection-image{
+
+.collection-image {
     width: 325px;
     height: 256px;
 }
-h2,h3{
+
+h2,
+h3 {
     margin: 0px 0px 0px 0px;
     display: flex;
 }
+
 p {
     color: #787885;
 }
@@ -112,21 +119,25 @@ p {
 .fa-star-half-stroke {
     color: #FB8200;
 }
-.feature-items{
+
+.feature-items {
     display: flex;
     margin-top: 100px;
     margin-left: 45px;
     margin-right: 45px;
     gap: 96px;
 }
-.gear-image{
+
+.gear-image {
     width: 404px;
     height: 270px;
 }
-.feature-items .feature-text h2{
+
+.feature-items .feature-text h2 {
     font-size: 38px;
 }
-.feature-button{
+
+.feature-button {
     background-color: #E02C6D;
     color: #FFFFFF;
     /*padding: 10px 24px 10px 24px;*/
@@ -134,27 +145,106 @@ p {
     height: 44px;
     width: 155px;
 }
-.footer-box{
+
+.footer-box {
     margin: 100px 0px 0px 0px;
     justify-content: center;
     align-items: center;
     display: flex;
-    
-    background-color:  #0A0826;
+
+    background-color: #0A0826;
 }
-.footer{
+
+.footer {
     margin-top: 50px;
     width: 270px;
-    height:200px;
+    height: 200px;
     margin-bottom: 50px;
 }
-.footer-box .footer .footer-text, .fa-brands{
+
+.footer-box .footer .footer-text,
+.fa-brands {
     color: #FFFFFF;
 }
-.footer-box .footer p{
+
+.footer-box .footer p {
     font-size: 14px;
     color: #FFFFFF;
 }
-.footer-box .footer .fa-brands{
+
+.footer-box .footer .fa-brands {
     gap: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 35px 16px 35px 16px;
+    }
+
+    div.options {
+        display: none;
+    }
+
+    div.landing-page {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .landing-page .heading h1 {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    div.heading {
+        width: 360px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .main-camera {
+        width: 257px;
+        height: 257px;
+    }
+
+    hr {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px 0px 0px 0px;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 30px;
+    }
+
+    .feature-items {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 96px;
+    }
+
+    .feature-items .feature-text h2 {
+        margin-top: 30px;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .gear-image {
+        width: 299px;
+        height: 188px;
+        align-items: center;
+        justify-content: center;
+    }
 }
